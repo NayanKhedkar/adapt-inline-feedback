@@ -1,0 +1,16 @@
+{
+  "name": "adapt-assessment-review-inline-feedback",
+  "version": "3.0.1",
+  "framework": ">=5",
+  "homepage": "",
+  "extension": "assessmentReviewInlineFeedback",
+  "displayName": "Assessment Review Inline Feedback",
+  "description": "An extension to display inline question's feedback for every question after clicked 'Review Assessment' button",
+  "main": "/js/adapt-assessment-review-inline-feedback.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_assessmentReview"
+}

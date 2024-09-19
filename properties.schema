@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "article": {
+          "type": "object",
+          "properties": {
+            "_assessmentReview": {
+              "type": "object",
+              "required": true,
+              "legend": "Assessment Review Inline Feedback",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enable Assessment Review Inline Feedback ?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                },
+                "buttonLable": {
+                  "type": "string",
+                  "required": false,
+                  "default": "Review Assessment",
+                  "title": "Button text",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "Assessment Review Inline Feedback"
+                }
+              }
+            }
+          }
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_assessmentQuestionsFeedbackOnSubmit": {
+              "type": "object",
+              "required": true,
+              "legend": "Assessment Review Inline Feedback ",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Enable Assessment Review Inline Feedback ?",
+                  "inputType": "Checkbox",
+                  "validators": []
+                }
+              }
+            }
+          }
+        },
+        "config": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

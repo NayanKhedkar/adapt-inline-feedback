@@ -1,0 +1,26 @@
+// globally hide inline feedback
+.inline__feedback {
+  display: none;
+}
+
+// display inline feedback for submitted questions
+.is-question .component__widget.is-submitted ~ .inline__feedback {
+  display: block;
+}
+
+.is-question .component__widget.is-submitted ~ .inline__feedback.show-feedback {
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #F2F2F2;
+}
+
+.review-button-container{ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .review-assessment{
+    background-color: transparent;
+    color: #3d692b;
+    text-decoration: underline;
+  }
+}
